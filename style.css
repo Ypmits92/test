@@ -1,8 +1,40 @@
+
+
 h1{
     color: rgb(168, 84, 84);
+}
+
+#elso{
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#masodik{
+    color: greenyellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 p{
     color: grey;
     font-size: 24px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.asd{
+    color: indigo;
+    width: 300px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px black;
+}
+
+.imgdiv{
+    border: dotted black;
+    background-color: rgb(150, 161, 153);
 }
