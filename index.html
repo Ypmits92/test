@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,27 @@
     <title>Teszt</title>
     <link rel="stylesheet" href="/selector.css">
 </head>
+
 <body>
+    <div id="divMenu">
+       <button class="btnMenu">Kezdőlap</button>
+       <button class="btnMenu">Login</button>
+       <button class="btnMenu">Megrendelések</button>
+    </div>
     <h1>Login</h1>
     <div class="loginDiv">
         <div class="formGroup">
-        <label>Email</label>
-        <input class="formControl" type="email" name="email">
-    </div>
-    <div class="formGroup">
-        <label>Password</label>
-        <input class="formControl" type="password" name="password">
-    </div>
-    <div class="formGroup">
-        <button class="submitBtn">Login</button>
-    </div>
+            <label for="email">Email</label>
+            <input class="formControl" type="email" name="email" required>
+        </div>
+        <div class="formGroup">
+            <label for="password">Password</label>
+            <input class="formControl" type="password" name="password" required>
+        </div>
+        <div class="formGroup">
+            <button class="submitBtn">Login</button>
+        </div>
     </div>
 </body>
+
 </html>
