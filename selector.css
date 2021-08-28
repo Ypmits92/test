@@ -1,0 +1,27 @@
+body{
+    background-color: gray;
+}
+
+.loginDiv{
+    padding: 15px;
+    border: solid 1px lightgray;
+    box-shadow: 0 0 4px black;
+    display: inline-block;
+}
+
+.loginDiv input{
+    display: block;
+    margin-bottom: 2px;
+}
+
+.loginDiv input:focus{
+    box-shadow: 0 0 3px;
+}
+
+.loginDiv input[type="email"]{
+    border: solid 1px blue;
+}
+
+.loginDiv button:hover{
+    box-shadow: 0 0 3px;
+}

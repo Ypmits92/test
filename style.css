@@ -16,7 +16,8 @@ h1{
 
 p{
     color: grey;
-    font-size: 24px;
+    font-size: 20px;
+    width: 65%;;
 }
 
 .bold{
@@ -25,16 +26,32 @@ p{
 
 .asd{
     color: indigo;
-    width: 300px;
+    width: 500px;
 }
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 30%;
     box-shadow: 0 0 10px black;
+    margin: 1%;
 }
 
 .imgdiv{
     border: dotted black;
-    background-color: rgb(150, 161, 153);
+    background: rgba(90, 62, 41, 0.4);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+.ert{
+    font-family: 'Oswald', sans-serif;
+    color: chocolate;
+    width: 65%;
+}
+
+#imgEgy{
+    visibility:inherit;
+    position: fixed;
+    top: 0px;
+    right:0px;
 }
