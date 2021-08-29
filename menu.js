@@ -19,20 +19,18 @@ function funcGotocalc(elemnt){
 }
 
 function funcCount(elemnt){
-    if(txtOutcome.value=="0" || document.getElementById("btnOp+").disabled==false){
-        txtOutcome.value=elemnt.innerHTML;
-    }
-    else{
-        txtOutcome.value+=elemnt.innerHTML;
-    }
     if(document.getElementById("btnOp+").disabled==false && c==0){
         a=elemnt.innerHTML;
+        txtOutcome.value=elemnt.innerHTML;
+        c=1;
     }
     else if(document.getElementById("btnOp+").disabled==false){
         a+=elemnt.innerHTML;
+        txtOutcome.value+=elemnt.innerHTML;
     }
     else{
         b+=elemnt.innerHTML;
+        txtOutcome.value+=elemnt.innerHTML;
     }
 }
 
