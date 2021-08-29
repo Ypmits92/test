@@ -55,6 +55,12 @@ function funcDelete(){
 }
 
 function funcEqual(){
+    if(!txtOutcome.value.includes("+") && !txtOutcome.value.includes("-") && !txtOutcome.value.includes("*") && !txtOutcome.value.includes("/")){
+        txtOutcome.value="0";
+    }
+    if(txtOutcome.value[txtOutcome.value.length-1]=="+" || txtOutcome.value[txtOutcome.value.length-1]=="-" || txtOutcome.value[txtOutcome.value.length-1]=="*" || txtOutcome.value[txtOutcome.value.length-1]=="/"){
+        txtOutcome.value="0";
+    }
     if(d == "+"){
         c = parseFloat(a) + parseFloat(b);
         txtOutcome.value = c;
