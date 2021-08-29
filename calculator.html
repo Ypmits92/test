@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulátor</title>
+    <link rel="stylesheet" href="/selector.css">
+</head>
+
+<body>
+    <div id="divMenu">
+        <button class="btnMenu" id="btnHome" onclick="funcGotocalc(this);">Kezdőlap</button>
+        <button class="btnMenu" id="btnLogin" onclick="funcGotocalc(this);">Bejelentkezés</button>
+        <button class="btnMenu" id="btnOrders" onclick="funcGotocalc(this);">Megrendelések</button>
+        <button class="btnMenu" id="btnCalc" onclick="funcGotocalc(this);">Számológép</button>
+    </div>
+
+    <div margin-top="20px">
+        <h1
+            style="color: white; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Kalkulátor
+        </h1>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="Outcome" id="txtOutcome" disabled value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">7</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">8</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">9</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnOp+" onclick="funcOper(this)">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">4</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">5</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">6</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnOp-" onclick="funcOper(this)">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">1</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">2</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">3</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnOp*" onclick="funcOper(this)">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="styCalculator" id="btnNum" onclick="funcCount(this)">0</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnOp" onclick="funcCount(this)" disabled>,</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnEqual" onclick="funcEqual()">=</button>
+                </td>
+                <td>
+                    <button class="styCalculator" id="btnOp/" onclick="funcOper(this)">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button class="styCalculator" id="btnDel" onclick="funcDelete()">CE</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="/menu.js">
+    </script>
+</body>
+
+</html>

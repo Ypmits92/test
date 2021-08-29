@@ -51,7 +51,29 @@ img{
 
 #imgEgy{
     visibility:inherit;
-    position: fixed;
     top: 0px;
     right:0px;
+}
+
+#divMenu{
+    position:fixed;
+    top:0;
+    background-color: white;
+    display: flex;
+    width:97.5%;
+}
+
+.btnMenu {
+    width:100%;
+    background-color:darkgrey;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btnMenu:hover{
+    cursor: pointer;
+    box-shadow: white 0 0 30px;
+    width: 120%;
+    height: 120%;
 }

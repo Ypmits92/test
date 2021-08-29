@@ -7,6 +7,7 @@ body{
     border: solid 1px lightgray;
     box-shadow: 0 0 4px black;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .loginDiv input{
@@ -25,10 +26,12 @@ body{
 .loginDiv button:hover{
     box-shadow: 0 0 3px;
     cursor: pointer;
+    display: inline;
 }
 
 #divMenu{
     position:fixed;
+    top:0;
     background-color: white;
     display: flex;
     width:97.5%;
@@ -47,4 +50,17 @@ body{
     box-shadow: white 0 0 30px;
     width: 120%;
     height: 120%;
+}
+
+.styCalculator{
+    width: 100%;
+    font-weight: bold;
+}
+
+.styCalculator:hover{
+    width: 105%;
+    height: 105%;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 3px white;
 }
